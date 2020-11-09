@@ -1,8 +1,9 @@
-import { Document } from 'mongoose';
-import jsonwebtoken from 'jsonwebtoken';
+import { Document } from "mongoose";
+import jsonwebtoken from "jsonwebtoken";
 
 // An interface that describes the properties that a User Document has
 export interface IUserDoc extends Document {
+  id?: string;
   email: string;
   password: string;
 }

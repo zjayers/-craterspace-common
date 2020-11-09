@@ -1,6 +1,5 @@
-import { NextFunction, Request, Response } from 'express';
-
-import { TokenManager } from '../services/token-manager';
+import { NextFunction, Request, Response } from "express";
+import { TokenManager } from "..";
 
 export const getCurrentUser: (
   req: Request,
