@@ -12,7 +12,7 @@ export const getCurrentUser: (
   }
 
   try {
-    req.currentUser = TokenManager.VERIFYTOKEN(req.session.jwt);
+    req.currentUser = TokenManager.VerifyToken(req.session.jwt);
   } catch (e) {}
   next();
 };
