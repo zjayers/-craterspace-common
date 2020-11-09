@@ -1,6 +1,6 @@
-import { NextFunction, Request, Response } from 'express';
+import { NextFunction, Request, Response } from "express";
 
-import { CustomError } from '../errors/custom-error';
+import { CustomError } from "..";
 
 export function errorHandler(
   error: Error,
@@ -15,15 +15,13 @@ export function errorHandler(
   }
 
   // Global catch error handler
-  return res
-    .status(400)
-    .send({
-      errors: [
-        {
-          message: 'Something went wrong',
-          error: error.message,
-          stack: error.stack,
-        },
-      ],
-    });
+  return res.status(400).send({
+    errors: [
+      {
+        message: "Something went wrong",
+        error: error.message,
+        stack: error.stack,
+      },
+    ],
+  });
 }
