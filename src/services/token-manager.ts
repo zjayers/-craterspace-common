@@ -1,5 +1,5 @@
 import jsonwebtoken from "jsonwebtoken";
-import * as mongoose from "mongoose";
+import mongoose from "mongoose";
 
 // An interface that describes the properties that a User Document has
 export interface ISignUpPayload {
